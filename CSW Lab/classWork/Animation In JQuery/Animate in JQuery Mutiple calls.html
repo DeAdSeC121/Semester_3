@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script> 
+	$(document).ready(function(){
+ 	$("button").click(function(){
+	var x=$("div")
+ 	x.animate({left:'500px',opacity:0.2,height:'200px',width:'100px',});
+	x.animate({left:'200px',opacity:0.5,height:'100px',width:'50px',});
+	x.animate({left:'100px',opacity:0.7,height:'50px',width:'25px',},"slow");
+			});
+			});
+</script> 
+
+	<style>
+		div{
+			background-color:blue;
+			width:50px;
+			height:50px;
+			position:fixed;
+			}
+	</style>
+
+</head>
+<body>
+	<div></div><br><br><br>
+	<button>Click Me</button>	
+</body>
+</html>
