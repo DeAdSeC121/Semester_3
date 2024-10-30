@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+		#div1{
+			background-color:red;
+			border:2px solid black;
+			
+			height:100px;
+			width:100px;
+			}
+
+		#div2{
+			background-color:pink;
+			
+			border:2px solid black;
+			height:100px;
+			width:100px;
+			}
+		
+		#div3{
+			background-color:purple;
+			
+			border:2px solid black;
+			height:100px;
+			width:100px;
+			}
+	</style>
+	<script>
+		$(document).ready(function(){
+		$("button").click(function(){
+		$("#div1").fadeOut(3000);
+		$("#div2").fadeOut(2000);
+		$("#div3").fadeOut(1000);
+		});
+		});
+	</script>
+
+
+	
+
+</head>
+<body>
+	<div id="div1"></div>
+	<div id="div2"></div>
+	<div id="div3"></div>
+	<button>Click Me</button>
+</body>
+</html>
