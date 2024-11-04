@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+</script>
+<script>
+$(document).ready(function(){
+ $("button").click(function(){
+ $(".h").css({"background-color": "yellow", "font-size": "200%"}).slideUp(2000).slideDown(2000);
+ });
+});
+</script>
+</head>
+<body>
+<h1 class="h">Using chaining to modify this heading.</h1>
+<h2 class="h">Using chaining to modify this heading.</h2>
+<button>Hit Me!</button>
+</body>
+</html>

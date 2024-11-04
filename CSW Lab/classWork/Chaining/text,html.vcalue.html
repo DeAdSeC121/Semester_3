@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+</script>
+
+
+<script>
+	$(document).ready(function(){
+ $("button").click(function(){
+ $("#b1").click(function(){
+alert("Text:+$("#xy").text());
+	});
+	
+$("#b2").click(function(){
+alert("html:+$("#xy").html());
+
+	});
+$("#b3").click(function(){
+alert("value:+$("#ab").val());
+
+	});
+});
+
+</script>
+	
+  	<title>Chaining In JQuery</title>
+
+   
+</head>
+<body>
+	<p id="xy">This is a line<b>bold text</b></p>
+	<p><input type="text" id="ab" value="Abhijeet"></p>
+	<button id="b1">Text</button>
+	<button id="b2">html</button>
+
+</body>
+</html>
