@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head><title>Append</title>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+	$(document).ready(function(){
+ $("#b1").click(function(){
+ $("p").append("<b>New Content</b>. ");
+ });
+ $("#b2").click(function(){
+ $("ul").append("<li>Nuggets</li>");
+ });
+});
+</script>
+	
+  	
+
+   
+</head>
+<body>
+	<p>This is a line</p>
+	<p>This is a line</p>
+<ul>
+	<li>Coffee</li>
+	<li>Snacks</li>
+	<li>Tea</li>
+</ul>
+
+	
+	<button id="b1">B1</button>
+	<button id="b2">B2</button>
+
+</body>
+</html>
