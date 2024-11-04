@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+<!--This is the style for the "Mouse Cuesor" div box -->
+		.DropDown{
+			position:relative;
+			display:block;
+			color:blue;
+			width:100px;
+			height:60px;
+		}
+
+<!--This is the style for the Context div box -->
+		.context{
+						
+			text-align:center;
+			position:absolute;
+			display:none;
+			background-color:green;
+			border:2px solid red;
+			width:100px;
+		}
+
+<!--This is the style for giving the color to the context div  -->
+		button{
+			color:green;
+			background-color:blue;
+			border:2px solid red;
+			padding:10px 20px;
+		}
+
+<!--This is the style for making the individual box in the context box -->
+		a{
+		display:block;
+		}
+
+		.DropDown:hover .context{
+			display:block;	
+		}
+
+		.DropDown:hover button{
+			background-color:black;	
+		}
+<!--This is the style for giving the individual boxes a color that will visible when mouse will be hoverer over it -->
+		.context a:hover{
+			background-color:orange;	
+		}
+
+
+
+				
+	
+	</style>
+</head>
+<body>
+	<div class="DropDown">
+		<button>Move Cursor</button>
+			<div class="context">
+				<a href="#">CSW1</a>
+				<a href="#">ID</a>
+				<a href="#">AD</a>
+				<a href="#">DL</a>
+				<a href="#">IM</a>
+			</div>
+		
+			
+			</div>
+	</div>
+</body>
+</html>
