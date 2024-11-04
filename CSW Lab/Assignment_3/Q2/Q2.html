@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head><title>Q2</title>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+	$(document).ready(function(){
+ $("#d1").click(function(){
+ $("#d1").html("<b>'Clicked!'</b>");
+ });
+ $("#d1").dblclick(function(){
+ $("#d1").css("background-color","orange");
+});
+$("#d1").mouseenter(function(){
+ $("#d1").css("border-color","green");
+});
+$("#d1").mouseleave(function(){
+ $("#d1").css("border-color","black");
+});
+ }); 
+</script>
+
+<style>
+	#d1{
+		text-align:center;
+		background-color:#59a9e3;
+		border:10px solid black;
+	}
+</style>
+	
+</head>
+<body>
+
+<h1>Assignment_3 Question 2</h1><hr>
+
+<div id="d1">
+	<h1 id="a">Heading 1</h1>
+	<h1 id="b">Heading 1</h1>
+	<h1 id="c">Heading 1</h1>
+	<p>paragrapg 1</p>	
+
+</div>
+	</body>
+</html>
