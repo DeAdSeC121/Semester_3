@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head><title>ToggleClass</title>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+$("h1,h2").toggleClass("xyz");
+$("p").toggleClass("abc");
+});
+});
+</script>
+
+<style>
+	.xyz{color:green;}
+	.abc{color:blue;}
+</style>
+	
+
+</head>
+<body>
+
+<h3>ToggleClass Selector</h3><hr>
+
+	<h1>Heading 1</h1>	
+	<h2>Heading 2</h2>
+	<p>THis is a paragraph</p>	
+
+	<button>"Toggle Class To html Elements"</button>
+	
+</body>
+</html>
