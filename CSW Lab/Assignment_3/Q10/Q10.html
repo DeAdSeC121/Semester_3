@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head><title>Q10</title>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+	$(document).ready(function(){
+	$("#name,#email,#pass").mouseenter(function(){
+	$(this).css("background-color","green");
+	});
+});
+$(document).ready(function(){
+	$("button").click(function(){
+	const in1=$("#name").val();
+	const in2=$("#email").val();
+	const in3=$("#pass").val();
+
+		if(in1==""||in2==""||in3==""){
+		alert("Enter all the Feilds properly");
+	}
+	else{
+	alert("Form Submitted Sussecfully");
+	}
+	});
+});
+</script>
+<style>
+	div{
+		text-align:center;
+	}
+	a{
+	border:1px solid blue;
+	
+	}
+</style>
+
+
+</head>
+<body>
+	<h2>Assignment_3 Question 10</h2><hr>
+<div>
+	<h1>Form Fill</h1>
+<form>
+	<lable for="name">NAME</lable><br>
+	<input type="text" id="name" placeholder="Enter Full Name"><br>
+	<lable for="email">E-MAIL</lable><br>
+	<input type="text" id="email" pattern="[^@\s]+@[^@\s]+" 	placeholder="Enter Your E-mail"><br>
+	<lable for="pass">PASSWORD</lable><br>
+	<input type="text" id="pass" placeholder="Enter Your Password"><br>
+	
+	<button><a href="#">googleeeeeee</a></button><br><br>
+</form>	
+</div>
+
+
+
+		
+
+</body>
+</html>
