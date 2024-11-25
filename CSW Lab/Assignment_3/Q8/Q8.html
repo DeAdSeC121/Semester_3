@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head><title>Q8</title>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+	$(document).ready(function(){
+	$("#b1").click(function(){
+	const textval = $("#pa").val();
+	if(textval){
+		$("#"+textval).remove();
+		}
+	else{
+	alert("One data is missing , Enter all fields");
+	}
+	});
+	});
+</script>
+<style>
+</style>
+
+
+</head>
+<body>
+	<h1>Assignment 3 Question 8</h1>
+<div class="d1">
+<p id="p1">Welcome to my para1<p>
+<p id="p2">Welcome to my para2<p>
+<p id="p3">Welcome to my para3<p3>
+</div>
+
+<label for ="pa">Enter</lable>
+<input type="text" id="pa" name="pa">
+
+<button id="b1">REMOVE</button>
+	
+	
+
+</body>
+</html>
