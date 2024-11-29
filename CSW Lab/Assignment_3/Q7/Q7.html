@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head><title>Q7</title>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+	$(document).ready(function(){
+	$("button").click(function(){
+	const name1=$("#name").val();
+	const redg1=$("#redg").val();
+	const mark1=$("#mark").val();
+	if(name1 && redg1 && mark1){
+		$("tbody").append("<tr><td>"+name1+"</td><td>"+redg1			+"</td><td>"+mark1+"</td></tr>")
+		$("#name").val("");
+		$("#redg").val("");
+		$("#mark").val("");
+		}
+	else{
+	alert("One data is missing , Enter all fields");
+	}
+	});
+	});
+</script>
+<style>
+	table,tr,td{
+		border: 2px solid black;
+		text-align:center;
+	}
+
+	table{
+		border-collapse:collapse;
+	}
+</style>
+
+
+</head>
+<body>
+	<h1>Student Data</h1>
+	<lable for="name">NAME</lable><br>
+	<input type="text" id="name" placeholder="Enter Name"><br>
+	<lable for="name">REDG NO.</lable><br>
+	<input type="text" id="redg" placeholder="Enter RedgNo."><br>
+	<lable for="name">MARKS</lable><br>
+	<input type="text" id="mark" placeholder="Enter Your Marks"><br>
+	
+
+	<button>INSERT</button><br><br>
+
+
+
+
+	<table>
+	<thead>
+		<tr>
+		<td>Name</td>
+		<td>Redg no</td>
+		<td>Marks</td>
+		</tr>
+	</thead>
+<tbody></tbody>
+	</table>
+
+	
+
+</body>
+</html>

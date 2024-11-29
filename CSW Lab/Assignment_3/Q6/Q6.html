@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head><title>Q6</title>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+	$(document).ready(function(){
+	$("#b1").click(function(){
+	$("div").removeClass("xyz");
+	$("div").addClass("highlight");
+	})
+	$("#b2").click(function(){
+	$("div").addClass("dim");
+	});
+	});
+
+
+
+ </script>
+
+
+<style>
+	.xyz{
+		background-color:none;
+	}
+
+	.highlight{
+		background-color:yellow;
+	}
+
+	.dim{
+		opacity:0.5;
+	}
+
+</style>	
+  	
+
+   
+</head>
+<body>
+<h2>Assignment_3 Question 6</h2><hr>
+
+	<div class= "xyz" style="width:100px;height:50px;border: 2px solid black;"></div>	
+	<button id="b1">Add Highlight</button>
+	<button id="b2">Add Dim</button>
+	
+
+</body>
+</html>
