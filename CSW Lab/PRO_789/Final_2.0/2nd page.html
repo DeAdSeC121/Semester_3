@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+ 
+<html>
+ <head>
+ 	<title>Student Information</title>
+ </head>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/
+bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.
+js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+</script>
+
+<style>
+
+.search_bar{
+	margin: auto;
+  	width: 18%;
+  	padding: 10px;
+
+	}
+.Table{
+	margin: auto;
+  	width: 50%;
+  	padding: 10px;
+	}
+
+table,th,td{
+text-align:center;
+border:2px groove black;
+border-collapse:collapse;
+
+}
+th{
+height:40px;
+}
+
+tr:nth-child(odd) {
+		background-color:rgb(165, 194, 214);
+	}
+
+tr:nth-child(even) {
+		background-color:rgb(170, 165, 184);
+	}
+tr:hover{
+	background-color: coral;
+	}
+.student_form{
+	margin: auto;
+  	width: 50%;
+  	padding: 10px;
+	}
+
+</style>
+
+<script>
+<!--Script for Data Entry Form-->
+ $(document).ready(function() {
+            $("button#insert").click(function() {
+                const name1 = $("#name").val();
+                const age1 = $("#age").val();
+                const sem1 = $("#sem").val();
+                const redg1 = $("#regn").val();
+
+                const row = `<tr>
+                                <td>${name1}</td>
+                                <td>${age1}</td>
+                                <td>${sem1}</td>
+                                <td>${redg1}</td>
+                                <td>
+                                    <button class="btn btn-warning btn-sm edit">Edit</button>
+                                    <button class="btn btn-danger btn-sm delete">Delete</button>
+                                </td>
+                             </tr>`;
+                $("tbody").append(row);
+                clearInputs();
+            });
+
+            // Edit functionality
+            $(document).on('click', '.edit', function() {
+                const row = $(this).closest('tr');
+                $("#name").val(row.find('td:eq(0)').text());
+                $("#age").val(row.find('td:eq(1)').text());
+                $("#sem").val(row.find('td:eq(2)').text());
+                $("#regn").val(row.find('td:eq(3)').text());
+                row.remove(); // Remove the row after editing
+            });
+
+            // Delete functionality
+            $(document).on('click', '.delete', function() {
+                $(this).closest('tr').remove();
+            });
+
+            function clearInputs() {
+                $("#name").val("");
+                $("#age").val("");
+                $("#sem").val("");
+                $("#regn").val("");
+            }
+        });
+
+
+
+
+
+<!--Script for Seach box functionality-->
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+ <body>
+<h1 style="text-align:center;"><u><i>"Student Information"</i></u></h1>
+
+<div class="Table">
+
+
+
+
+
+
+	
+
+
+
+
+
+
+<div class="search_bar">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for your names.." title="Type in a name">
+</div>
+
+
+<h1>Student Data</h1>
+	 <label for="name">NAME</label><br>
+         <input type="text" id="name" placeholder="Enter Name">	<br>
+         <label for="regn">REGISTERATION NO</label><br>
+         <input type="text" id="regn" placeholder="Enter registration no"<br>
+         <label for="age">AGE</label><br>
+         <input type="text" id="age" placeholder="Enter your age"><br>
+              <label for="sem">SEMESTER</label><br>
+                    <input type="text" id="sem" placeholder="Enter Your semester"><br>
+                    <button id="insert">INSERT</button><br><br>
+
+
+
+
+
+	 <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Age</td>
+                                <td>Semester</td>
+                                <td>Registration number</td>
+                                <td>Activities</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+
+
+</div>
+</table>
+</body>
+ </html>
