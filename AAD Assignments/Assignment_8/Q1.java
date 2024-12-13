@@ -70,3 +70,19 @@ public static void main( String args[]){
 
 //outpot
 //  1  2  3  4  5
+
+
+
+//Time Complexcity
+//Insert: O(1)
+//Pop: O(1)
+//Top: O(1)
+//Is Empty: O(1)
+//Size: O(1)
+//Print: O(n)
+
+
+
+
+//Space Complexcity
+// O(1)
