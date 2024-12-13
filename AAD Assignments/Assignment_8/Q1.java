@@ -63,7 +63,10 @@ public static void main( String args[]){
     insert(a,4);
     insert(a,5);
     print(a);
-
+  }
 }
 
-}
+
+
+//outpot
+//  1  2  3  4  5
